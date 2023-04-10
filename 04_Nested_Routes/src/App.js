@@ -14,7 +14,7 @@ function App() {
           <Link to="/about">About</Link>
           <Link to="/products">Products</Link>
           <Link to="/test">Test</Link>
-          <Link to="/checkout">Chart</Link>
+          <Link to="/checkout">Checkout</Link>
         </nav>
 
         <Routes>
@@ -40,7 +40,12 @@ function App() {
           {/*Navigate on condition: */}
           {/* <Route path="/checkout" element={chartIsEmpty ? <Products /> : <p>checkout page</p>} /> */}
           {/* OR */}
-          <Route path="/checkout" element={chartIsEmpty ? < Navigate to="/products" /> : <p>checkout page</p>} />
+          <Route
+            path="/checkout"
+            element={
+              chartIsEmpty ? <Navigate to="/products" /> : <p>checkout page</p>
+            }
+          />
         </Routes>
       </BrowserRouter>
     </div>
