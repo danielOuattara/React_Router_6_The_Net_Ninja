@@ -31,16 +31,22 @@ function App() {
               </div>
             }
           />
-          {/* Old !*/}
+          {/*------------------------ Old !*/}
           {/* <Route path="/redirect" element={<Redirect to="/about" />} /> */}
 
-          {/* New !*/}
+          {/* ----------------------- New !*/}
           <Route path="/redirect" element={<Navigate to="/about" />} />
 
-          {/*Navigate on condition: */}
+          {/* ----------------------- Navigate on condition: */}
           {/* <Route path="/checkout" element={chartIsEmpty ? <Products /> : <p>checkout page</p>} /> */}
+
           {/* OR */}
-          <Route path="/checkout" element={chartIsEmpty ? < Navigate to="/products" /> : <p>checkout page</p>} />
+          <Route
+            path="/checkout"
+            element={
+              chartIsEmpty ? <Navigate to="/products" /> : <p>checkout page</p>
+            }
+          />
         </Routes>
       </BrowserRouter>
     </div>
