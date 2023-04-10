@@ -1,7 +1,7 @@
-import { Route, useParams, /* useRouteMatch */ } from "react-router-dom";
+import { /* Route, */ useParams /* useRouteMatch */ } from "react-router-dom";
 
 // nested routes
-import Offers from "./Offers";
+// import Offers from "./Offers";
 
 export default function ProductDetails() {
   const { id } = useParams();
@@ -16,15 +16,17 @@ export default function ProductDetails() {
         <div className="details">
           <h2>Product - {id}</h2>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos eaque repudiandae itaque
-            dolorem nihil, voluptas corporis tempora provident optio harum modi inventore esse
-            nostrum exercitationem magnam tempore odio laborum velit! Lorem ipsum dolor sit amet
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos eaque
+            repudiandae itaque dolorem nihil, voluptas corporis tempora
+            provident optio harum modi inventore esse nostrum exercitationem
+            magnam tempore odio laborum velit! Lorem ipsum dolor sit amet
             consectetur adipisicing elit.
           </p>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi voluptate neque harum.
-            Quam facere accusamus exercitationem in quidem mollitia eligendi porro eos voluptates
-            iure incidunt, laudantium sed harum omnis quasi?
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi
+            voluptate neque harum. Quam facere accusamus exercitationem in
+            quidem mollitia eligendi porro eos voluptates iure incidunt,
+            laudantium sed harum omnis quasi?
           </p>
         </div>
       </div>
